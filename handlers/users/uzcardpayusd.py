@@ -78,8 +78,8 @@ async def hisobusd(message: Message,state: FSMContext):
 			natija = puliusd / payerint
 			natijasi = "%.2f" % natija
 		
-			await message.answer("8600332962820019")
-			msdusd = f"<b>KENJAYEV JASUR 👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n8600332962820019\n\n👆karta raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {puliusd} UZCARD SUM\n\n📤Olish miqdori: {natijasi} PAYEER USD*\n💳UZCARD: {uzcardr.read()}\n💵PAYEER: {payeerir.read()}\n\n►PAYME, CLICK , APELSIN - to'lov tizimlaridan birida to'lov qilsangiz to'lovingiz tezroq bajariladi\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
+			await message.answer("9860080181620333")
+			msdusd = f"<b>KENJAYEV JASUR 👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n9860080181620333\n\n👆karta raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {puliusd} UZCARD SUM\n\n📤Olish miqdori: {natijasi} PAYEER USD*\n💳UZCARD: {uzcardr.read()}\n💵PAYEER: {payeerir.read()}\n\n►PAYME, CLICK , APELSIN - to'lov tizimlaridan birida to'lov qilsangiz to'lovingiz tezroq bajariladi\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
 			await PayUsd.next()
 			await message.answer(msdusd,reply_markup=confirmation_keyboard)
 			uzcardr.close()
