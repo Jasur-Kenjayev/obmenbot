@@ -92,8 +92,8 @@ async def hisobk(message: Message,state: FSMContext):
 			natijar = puli / qiwifs
 			natijar1 = "%.2f" % natijar
 		
-			await message.answer("8600332962820019")
-			msd = f"<b>KENJAYEV JASUR 👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n8600332962820019\n\n👆karta raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {phone} UZCARD SUM\n\n📤Olish miqdori: {natijar1} QIWI RUB*\n🇺🇿UZCARD: {uzcardi}\n🇷🇺QIWI: {qiwisi}\n\n►PAYME, CLICK , APELSIN - to'lov tizimlaridan birida to'lov qilsangiz to'lovingiz tezroq bajariladi\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
+			await message.answer("9860080181620333")
+			msd = f"<b>KENJAYEV JASUR 👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n9860080181620333\n\n👆karta raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {phone} UZCARD SUM\n\n📤Olish miqdori: {natijar1} QIWI RUB*\n🇺🇿UZCARD: {uzcardi}\n🇷🇺QIWI: {qiwisi}\n\n►PAYME, CLICK , APELSIN - to'lov tizimlaridan birida to'lov qilsangiz to'lovingiz tezroq bajariladi\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
 			await NewPost.next()
 			await message.answer(msd,reply_markup=confirmation_keyboard)
 			qiwiyu.close()
