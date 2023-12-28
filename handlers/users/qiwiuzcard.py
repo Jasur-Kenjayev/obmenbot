@@ -79,7 +79,7 @@ async def hisob2(message: Message,state: FSMContext):
 			natijarrrt = puli2 * qiwifsort
 			natijar2rt = "%.2f" % natijarrrt
 			await message.answer("+998935942855")
-			msd2 = f"<b>👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n+998935942855\n\n👆QIWI raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {qiwiuch} QIWI RUB\n\n📤Olish miqdori: {natijar2rt} UZCARD SUM*\n🇺🇿UZCARD: {uzcardirt}\n🇷🇺QIWI: {qiwisirt}\n\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
+			msd2 = f"<b>👆Ko'chirib olish uchun. Almashuvingiz muvaffaqiyatli bajarilishi uchun quyidagi harakatlarni amalga oshiring:\n1) Pastda ko'rsatilgan to'lov miqdorni\n\n+998935942452\n\n👆QIWI raqamiga o'tkazing;\n2) «To'lov qildim ✅» tugmasini bosing;\n3) Operator tomonidan almashuv tasdiqlanishini kuting.\n\n📥To'lov miqdori: {qiwiuch} QIWI RUB\n\n📤Olish miqdori: {natijar2rt} UZCARD SUM*\n🇺🇿UZCARD: {uzcardirt}\n🇷🇺QIWI: {qiwisirt}\n\n►Ushbu almashuv operator tomonidan navbati bilan amalga oshiriladi va 2 daqiqadan 60 daqiqagacha davom etadi.</b>"
 			await Qiwiu.next()
 			await message.answer(msd2,reply_markup=confirmation_keyboard)
 			qiwirt.close()
