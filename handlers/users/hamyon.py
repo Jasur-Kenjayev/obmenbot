@@ -30,7 +30,7 @@ async def create_wal(message: Message):
     	follow = open(f"files/uzcard{id}.txt", "r")
     	await message.answer(f"<b>💎 Sizning UZCARD Raqamingiz👇\n\n📌 UZCARD - <i>{follow.read()}</i>\n\n💳 UZCARD raqamni o'zgartirishni xoxlasangiz shu yerga yangi UZCARD raqam kiriting👇</b>",reply_markup=bekor)
     except:
-    	await message.answer("<b>🔖 UZCARD raqamingizni kiriting Bo'sh joylar yoki boshqa belgilarsiz.\n\n✅ Namuna: 8600332962820019</b>",reply_markup=bekor)
+    	await message.answer("<b>🔖 UZCARD raqamingizni kiriting Bo'sh joylar yoki boshqa belgilarsiz.\n\n✅ Namuna: 9860080181620333</b>",reply_markup=bekor)
     await PersonalData.aduzcard.set()
     
 @dp.message_handler(state=PersonalData.aduzcard)
@@ -40,7 +40,7 @@ async def wallet(message:
 	follw = message.text
 	msgw = follw
 	if len(follw) != 16 or (not follw.isdigit()):
-		await message.answer("<b>💳 UZCARD raqam formati notog'ri namunada ko'rsatilgandek kiriting👇\n\n✅ Namuna👉 8600332962820019</b>")
+		await message.answer("<b>💳 UZCARD raqam formati notog'ri namunada ko'rsatilgandek kiriting👇\n\n✅ Namuna👉 9860080181620333</b>")
 	else:
 			follow = open(f"files/uzcard{id}.txt", "w")
 			follow.write(follw)
@@ -79,7 +79,7 @@ async def create_qiwi(message: Message):
     	qiwi = open(f"files/qiwi{id}.txt", "r")
     	await message.answer(f"<b>💎 Sizning QIWI Raqamingiz👇\n\n📌 QIWI - <i>{qiwi.read()}</i>\n\n💳 QIWI raqamni o'zgartirishni xoxlasangiz shu yerga yangi QIWI raqam kiriting👇</b>",reply_markup=bekor)
     except:
-    	await message.answer("<b>🔖 QIWI raqamingizni kiriting Bo'sh joylar yoki boshqa belgilarsiz.\n\n✅ Namuna: <i>+998935942855</i></b>",reply_markup=bekor)
+    	await message.answer("<b>🔖 QIWI raqamingizni kiriting Bo'sh joylar yoki boshqa belgilarsiz.\n\n✅ Namuna: <i>+998945142452</i></b>",reply_markup=bekor)
     await PersonalData.adqiwi.set()
     
 @dp.message_handler(state=PersonalData.adqiwi)
@@ -88,7 +88,7 @@ async def wallet_qiwi(message:
 	id = message.from_user.id
 	qiwim = message.text
 	if len(qiwim) != 13:
-		await message.answer("<b>💳 QIWI raqam formati notog'ri namunada ko'rsatilgandek kiriting👇\n\n✅ Namuna👉 +998935942855</b>")
+		await message.answer("<b>💳 QIWI raqam formati notog'ri namunada ko'rsatilgandek kiriting👇\n\n✅ Namuna👉 +998945942452</b>")
 	else:
 		qiwi = open(f"files/qiwi{id}.txt", "w")
 		qiwi.write(qiwim)
